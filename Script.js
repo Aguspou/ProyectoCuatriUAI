@@ -43,5 +43,22 @@ if(botonInicio) {
     }
 }
 
+var formulario = document.getElementById('formularioContacto');
+
+if(formulario) {
+    formulario.onsubmit = function(evento) {
+        evento.preventDefault();
+        
+        var nombre = document.getElementById('nombre').value;
+        var email = document.getElementById('email').value;
+        var guitarra = document.getElementById('guitarra').value;
+        var mensaje = document.getElementById('mensaje').value;
+        
+        alert('Gracias ' + nombre + '! Tu mensaje fue enviado correctamente. Te responderemos a ' + email + ' a la brevedad.');
+        
+        formulario.reset();
+    }
+}
+
 // para ver si lee bien la pagina
 // console.log(cualSeccion);

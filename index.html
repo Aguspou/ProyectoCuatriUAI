@@ -17,6 +17,7 @@
                 <li><a href="#" class="enlace-nav" data-pagina="tipos">Tipos</a></li>
                 <li><a href="#" class="enlace-nav" data-pagina="historia">Historia</a></li>
                 <li><a href="#" class="enlace-nav" data-pagina="curiosidades">Curiosidades</a></li>
+                <li><a href="#" class="enlace-nav" data-pagina="contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -329,6 +330,76 @@
         </div>
     </section>
 
+    <section class="seccion-pagina" id="contacto">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Contacto</h2>
+                <p class="subtitulo-seccion">¿Tenés alguna pregunta o consulta sobre guitarras? Escribinos!</p>
+            </div>
+
+            <div class="contenedor-formulario">
+                <form class="formulario-contacto" id="formularioContacto">
+                    
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="guitarra">¿Qué tipo de guitarra te interesa?</label>
+                        <select id="guitarra" name="guitarra">
+                            <option value="">Selecciona una opción</option>
+                            <option value="clasica">Guitarra Clásica</option>
+                            <option value="acustica">Guitarra Acústica</option>
+                            <option value="electrica">Guitarra Eléctrica</option>
+                            <option value="otra">Otra</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
+
+                <div class="info-contacto">
+                    <div class="item-info">
+                        <div class="icono-info">📧</div>
+                        <h3>Email</h3>
+                        <p>info@guitarvault.com</p>
+                    </div>
+
+                    <div class="item-info">
+                        <div class="icono-info">📱</div>
+                        <h3>Teléfono</h3>
+                        <p>+54 11 1234-5678</p>
+                    </div>
+
+                    <div class="item-info">
+                        <div class="icono-info">📍</div>
+                        <h3>Ubicación</h3>
+                        <p>Buenos Aires, Argentina</p>
+                    </div>
+
+                    <div class="item-info">
+                        <div class="icono-info">🕐</div>
+                        <h3>Horario</h3>
+                        <p>Lun - Vie: 9:00 - 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
 
     <footer>
         <div class="contenido-footer">
