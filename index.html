@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Vault - Todo sobre Guitarras</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="contenedor-nav">
+            <a href="#" class="logo">GUITAR<span>VAULT</span></a>
+            <ul class="menu-nav">
+                <li><a href="#" class="enlace-nav activo" data-pagina="inicio">Inicio</a></li>
+                <li><a href="#" class="enlace-nav" data-pagina="tipos">Tipos</a></li>
+                <li><a href="#" class="enlace-nav" data-pagina="historia">Historia</a></li>
+                <li><a href="#" class="enlace-nav" data-pagina="curiosidades">Curiosidades</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="seccion-pagina activo" id="inicio">
+        <div class="hero">
+            <div class="contenido-hero">
+                <h1 class="titulo-hero">GUITAR VAULT</h1>
+                <p class="subtitulo-hero">Descubre el fascinante mundo de las guitarras</p>
+                <button class="boton-hero" data-pagina="tipos">Explorar Guitarras</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seccion-pagina" id="tipos">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Tipos de Guitarras</h2>
+                <p class="subtitulo-seccion">Cada guitarra tiene su propia personalidad y proposito musical</p>
+            </div>
+
+            <div class="grilla-guitarras">
+                
+                <div class="tarjeta-guitarra">
+                    <div class="img-guitarra">🎻</div>
+                    <div class="contenido-guitarra">
+                        <h3 class="tipo-guitarra">Guitarra Clásica</h3>
+                        <p class="descripcion-guitarra">
+                            También conocida como guitarra criolla o española, utiliza cuerdas de nylon que producen un sonido cálido y suave. Es la eleccion perfecta para música clásica, flamenco y bossa nova.
+                        </p>
+                        <div class="especificaciones-guitarra">
+                            <span class="etiqueta-spec">Cuerdas de Nylon</span>
+                            <span class="etiqueta-spec">Mástil Ancho</span>
+                            <span class="etiqueta-spec">Sonido Cálido</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tarjeta-guitarra">
+                    <div class="img-guitarra">🎸</div>
+                    <div class="contenido-guitarra">
+                        <h3 class="tipo-guitarra">Guitarra Acústica</h3>
+                        <p class="descripcion-guitarra">
+                            Con cuerdas de acero, ofrece un sonido brillante y proyeccion potente. Su caja de resonancia amplifica naturalmente las vibraciones. Perfecta para folk, country, pop y rock acustico.
+                        </p>
+                        <div class="especificaciones-guitarra">
+                            <span class="etiqueta-spec">Cuerdas de Acero</span>
+                            <span class="etiqueta-spec">Alto Volumen</span>
+                            <span class="etiqueta-spec">Versatilidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="tarjeta-guitarra">
+                    <div class="img-guitarra">⚡</div>
+                    <div class="contenido-guitarra">
+                        <h3 class="tipo-guitarra">Guitarra Eléctrica</h3>
+                        <p class="descripcion-guitarra">
+                            Utiliza pastillas magnéticas para convertir las vibraciones en señales electricas. Su cuerpo solido reduce la retroalimentacion. Infinitas posibilidades sonoras con pedales y amplificadores.
+                        </p>
+                        <div class="especificaciones-guitarra">
+                            <span class="etiqueta-spec">Pastillas</span>
+                            <span class="etiqueta-spec">Amplificada</span>
+                            <span class="etiqueta-spec">Efectos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="seccion-comparacion">
+                <h3 class="titulo-comparacion">Comparación Técnica</h3>
+                <table class="tabla-comparacion">
+                    <thead>
+                        <tr>
+                            <th>Caracteristica</th>
+                            <th>Clásica</th>
+                            <th>Acústica</th>
+                            <th>Eléctrica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tipo de Cuerdas</td>
+                            <td>Nylon</td>
+                            <td>Acero</td>
+                            <td>Acero niquelado</td>
+                        </tr>
+                        <tr>
+                            <td>Ancho del Mástil</td>
+                            <td>52mm (amplio)</td>
+                            <td>43-44mm (medio)</td>
+                            <td>42-43mm (estrecho)</td>
+                        </tr>
+                        <tr>
+                            <td>Número de Trastes</td>
+                            <td>18-19 trastes</td>
+                            <td>20 trastes</td>
+                            <td>21-24 trastes</td>
+                        </tr>
+                        <tr>
+                            <td>Peso Promedio</td>
+                            <td>1.5 - 2 kg</td>
+                            <td>1.8 - 2.5 kg</td>
+                            <td>3 - 4.5 kg</td>
+                        </tr>
+                        <tr>
+                            <td>Amplificación</td>
+                            <td>Natural</td>
+                            <td>Natural / Pickup</td>
+                            <td>Eléctrica (obligatoria)</td>
+                        </tr>
+                        <tr>
+                            <td>Géneros Principales</td>
+                            <td>Clásica, Flamenco</td>
+                            <td>Folk, Pop, Country</td>
+                            <td>Rock, Metal, Blues</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seccion-pagina" id="historia">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Historia de la Guitarra</h2>
+                <p class="subtitulo-seccion">Un viaje a través del tiempo y la evolución musical</p>
+            </div>
+
+            <div class="linea-tiempo">
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">1500s</div>
+                    <h3 class="titulo-tiempo">Nacimiento de la Vihuela</h3>
+                    <p class="texto-tiempo">
+                        En España surge la vihuela, precursora directa de la guitarra moderna. Instrumento de nobles y cortesanos, tenía entre 5 y 7 ordenes de cuerdas dobles.
+                    </p>
+                </div>
+
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">1850</div>
+                    <h3 class="titulo-tiempo">Antonio de Torres Revoluciona el Diseño</h3>
+                    <p class="texto-tiempo">
+                        El luthier español Antonio de Torres crea la guitarra clásica moderna. Aumenta el tamaño de la caja, perfecciona el abanico de varetas internas y establece la escala de 650mm que usamos hoy.
+                    </p>
+                </div>
+
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">1931</div>
+                    <h3 class="titulo-tiempo">Primera Guitarra Eléctrica</h3>
+                    <p class="texto-tiempo">
+                        George Beauchamp y Adolph Rickenbacker crean la "Frying Pan", la primera guitarra eléctrica comercial. Su diseño de aluminio fundido revolucionaría la música para siempre.
+                    </p>
+                </div>
+
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">1950</div>
+                    <h3 class="titulo-tiempo">La Fender Telecaster</h3>
+                    <p class="texto-tiempo">
+                        Leo Fender lanza la Broadcaster (luego Telecaster), primera guitarra eléctrica de cuerpo sólido producida en masa. Su diseño simple y funcional la hace icónica hasta hoy.
+                    </p>
+                </div>
+
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">1952</div>
+                    <h3 class="titulo-tiempo">Gibson Les Paul</h3>
+                    <p class="texto-tiempo">
+                        Gibson presenta la Les Paul, diseñada con el legendario guitarrista. Su cuerpo de caoba con tapa de arce y pastillas humbucker definen el sonido del rock clásico.
+                    </p>
+                </div>
+
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">1954</div>
+                    <h3 class="titulo-tiempo">Fender Stratocaster</h3>
+                    <p class="texto-tiempo">
+                        La Stratocaster aparece con innovaciones revolucionarias: tres pastillas, palanca de trémolo y diseño ergonómico contorneado. Se convierte en la guitarra más copiada de la historia.
+                    </p>
+                </div>
+
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">1980s</div>
+                    <h3 class="titulo-tiempo">Era del Super Strat</h3>
+                    <p class="texto-tiempo">
+                        Jackson, Ibanez y Charvel popularizan las "super strats": guitarras con pastillas humbucker de alta ganancia, puentes flotantes Floyd Rose y mástiles ultra-rápidos para el heavy metal.
+                    </p>
+                </div>
+
+                <div class="item-tiempo">
+                    <div class="anio-tiempo">2020s</div>
+                    <h3 class="titulo-tiempo">Guitarras Modernas</h3>
+                    <p class="texto-tiempo">
+                        La tecnología digital se integra completamente: modelado de amplificadores, procesamiento interno DSP, guitarras MIDI, y materiales compuestos de fibra de carbono llevan el instrumento al futuro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seccion-pagina" id="curiosidades">
+        <div class="contenedor">
+            <div class="encabezado-seccion">
+                <h2 class="titulo-seccion">Datos Curiosos</h2>
+                <p class="subtitulo-seccion">Hechos fascinantes que probablemente no conocías</p>
+            </div>
+
+            <div class="grilla-datos">
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">01</div>
+                    <h3 class="titulo-dato">La Guitarra Más Cara del Mundo</h3>
+                    <p class="descripcion-dato">
+                        La Fender Stratocaster "Reach Out to Asia" se vendió por $2.7 millones de dólares en 2005. Fue firmada por leyendas como Eric Clapton, Brian May, Jimmy Page, David Gilmour, Jeff Beck, Pete Townshend, Mark Knopfler, Ray Davies, Liam Gallagher, Ronnie Wood, Tony Iommi, Angus y Malcolm Young, Paul McCartney, Sting, Ritchie Blackmore, Def Leppard y Mick Jagger.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">02</div>
+                    <h3 class="titulo-dato">Cuerdas de Intestinos de Gato</h3>
+                    <p class="descripcion-dato">
+                        Contrario al mito popular, las cuerdas antiguas nunca se hicieron de intestinos de gato. Se fabricaban con intestinos de OVEJA (principalmente corderos). Este material se llamaba "catgut" pero "cat" viene del árabe "kit" que significa instrumento de cuerda pequeño.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">03</div>
+                    <h3 class="titulo-dato">Jimi Hendrix era Zurdo</h3>
+                    <p class="descripcion-dato">
+                        Hendrix tocaba guitarras para diestros volteadas al revés. Esto invertía el orden de las cuerdas, dándole un sonido único al hacer bends. Además, al ser zurdo en un mundo de diestros, desarrollo técnicas imposibles de replicar.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">04</div>
+                    <h3 class="titulo-dato">La Guitarra en el Espacio</h3>
+                    <p class="descripcion-dato">
+                        En 1965, el astronauta Wally Schirra llevó una armónica Hohner al espacio en la Gemini 6. Más tarde, en 2001, el comandante Chris Hadfield tocó "Space Oddity" de David Bowie en una guitarra Larrivée en la Estación Espacial Internacional, el primer video musical grabado en el espacio.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">05</div>
+                    <h3 class="titulo-dato">Las Guitarras de Brian May</h3>
+                    <p class="descripcion-dato">
+                        Brian May de Queen construyó su legendaria "Red Special" junto a su padre usando madera de una chimenea victoriana de 100 años. Las pastillas las hizo con imanes de motocicleta y alambres enrollados a mano. Sigue usandola hasta hoy.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">06</div>
+                    <h3 class="titulo-dato">Guitarras con Más de 6 Cuerdas</h3>
+                    <p class="descripcion-dato">
+                        Existen guitarras de 7, 8, 9, 10, 12, 18 e incluso 24 cuerdas. La guitarra de 7 cuerdas añade un Si grave y es popular en jazz y metal progresivo. Steve Vai popularizó la de 7 cuerdas con Ibanez en los 90s.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">07</div>
+                    <h3 class="titulo-dato">Record Guinness de Velocidad</h3>
+                    <p class="descripcion-dato">
+                        El guitarrista brasileño Tiago Della Vega tocó "Flight of the Bumblebee" a 320 BPM (beats por minuto) en 2008, estableciendo un récord mundial. Eso son más de 5 notas por segundo de forma limpia y precisa.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">08</div>
+                    <h3 class="titulo-dato">Eddie Van Halen Revolucionó el Tapping</h3>
+                    <p class="descripcion-dato">
+                        Aunque no inventó el tapping, Eddie Van Halen lo popularizó masivamente con "Eruption" en 1978. Tocaba de espaldas al público en conciertos tempranos para que nadie copiara su técnica. Incluso patentó su sistema de soporte para tapping con una mano llamado "D-Tuna".
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">09</div>
+                    <h3 class="titulo-dato">La Guitarra Más Pequeña del Mundo</h3>
+                    <p class="descripcion-dato">
+                        Científicos de la Universidad de Cornell crearon una nanoguitarra de silicio cristalino del tamaño de un glóbulo rojo humano (10 micrómetros). Aunque funcional, las cuerdas vibran a frecuencias inaudibles para el oído humano.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">10</div>
+                    <h3 class="titulo-dato">Destrucción Icónica</h3>
+                    <p class="descripcion-dato">
+                        Pete Townshend de The Who popularizó destruir guitarras en escena. Empezó accidentalmente en 1964 cuando rompió el mástil de su guitarra contra el techo bajo de un club. La audiencia pensó que era intencional y aplaudió, así que lo convirtió en su marca registrada.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">11</div>
+                    <h3 class="titulo-dato">Maderas Exóticas Prohibidas</h3>
+                    <p class="descripcion-dato">
+                        El palo de rosa brasileño (Brazilian Rosewood) fue tan usado en guitarras de lujo que entró en la lista CITES de especies protegidas en 1992. Hoy es ilegal comercializarlo sin permisos especiales. Guitarras antiguas con este material valen fortunas.
+                    </p>
+                </div>
+
+                <div class="tarjeta-dato">
+                    <div class="numero-dato">12</div>
+                    <h3 class="titulo-dato">El Solo de "Stairway to Heaven"</h3>
+                    <p class="descripcion-dato">
+                        Jimmy Page grabó el legendario solo en una sola toma usando una Fender Telecaster de 1959. Aunque Page es asociado con Gibson Les Paul, este iconico solo fue grabado con una Tele. La canción fue votada como "la mejor canción de rock de todos los tiempos" por múltiples revistas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="contenido-footer">
+            <p class="texto-footer">© 2024 <span>GUITAR VAULT</span> - Proyecto Educativo sobre Guitarras</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
