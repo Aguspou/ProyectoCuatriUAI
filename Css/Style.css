@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+nav {
+    background-color: #0d0d0d;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #ff6b36;
+}
+
+.contenedor-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6b35;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #f7b731;
+}
+
+.menu-nav {
+    list-style: none;
+    display: flex;
+    gap: 31px;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.menu-nav a:hover {
+    color: #ff6b35;
+}
+
+.menu-nav a.activo {
+    color: #ff6b35;
+}
+
+
+.seccion-pagina {
+    display: none;
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.seccion-pagina.activo {
+    display: block;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #0d0d0d, #2a2a2a);
+}
+
+.contenido-hero {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.titulo-hero {
+    font-size: 80px;
+    color: #ff6b35;
+    margin-bottom: 20px;
+    font-weight: bold;
+}    /* probé con 100px pero quedaba muy grande */
+
+
+.subtitulo-hero {
+    font-size: 24px;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.boton-hero {
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.boton-hero:hover {
+    background-color: #ff8556;
+}
+
+.encabezado-seccion {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-seccion {
+    font-size: 48px;
+    color: #ff6b35;
+    margin-bottom: 15px;
+}
+
+.subtitulo-seccion {
+    font-size: 18px;
+    color: #999999;
+}
+
+
+.grilla-guitarras {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 29px;
+    margin-bottom: 50px;
+}
+
+.tarjeta-guitarra {
+    background-color: #2a2a2a;
+    border: 2px solid #333333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-guitarra:hover {
+    border-color: #ff6b34;
+}
+
+.img-guitarra {
+    height: 200px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.tipo-guitarra {
+    font-size: 28px;
+    color: #f7b731;
+    margin-bottom: 15px;
+}
+
+.descripcion-guitarra {
+    color: #cccccc;
+    margin-bottom: 20px;
+    flex-grow:1;
+}
+
+.especificaciones-guitarra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.etiqueta-spec {
+    background-color: #1a1a1a;
+    border: 1px solid #ff6b35;
+    color: #ff6b35;
+    padding: 5px 15px;
+    font-size: 12px;
+}
+.img-real-guitarra {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-guitarra:hover .img-real-guitarra {
+    transform: scale(1.05);
+}
+
+.boton-calcular {
+    background-color: #f7b731;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto; 
+    transition: background-color 0.3s ease;
+}
+
+.boton-calcular:hover {
+    background-color: #e6a72e;
+}
+
+.seccion-comparacion {
+    margin-top: 50px;
+}
+
+.titulo-comparacion {
+    text-align: center;
+    font-size: 36px;
+    color: #f7b731;
+    margin-bottom: 30px;
+}
+
+.tabla-comparacion {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-collapse: collapse;
+}
+
+.tabla-comparacion th {
+    background-color: #ff6b35;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabla-comparacion td {
+    padding: 15px;
+    border-bottom: 1px solid #333333;
+    color: #cccccc;
+}
+
+.tabla-comparacion td:first-child {
+    color: #f7b731;
+    font-weight: bold;
+}
+
+
+.linea-tiempo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item-tiempo {
+    background-color: #2a2a2a;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 4px solid #ff6b35;
+}
+
+.anio-tiempo {
+    font-size: 36px;
+    color: #ff6b35;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titulo-tiempo {
+    font-size: 24px;
+    color: #f7b731;
+    margin-bottom: 15px;
+}
+
+.texto-tiempo {
+    color: #cccccc;
+}
+
+
+.grilla-datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.tarjeta-dato {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-left: 4px solid #ff6b35;
+}
+
+.numero-dato {
+    font-size: 48px;
+    color: #f7b731;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+.titulo-dato {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.descripcion-dato {
+    color: #cccccc;
+}
+
+footer {
+    background-color: #0d0d0d;
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid #ff6b35;
+    margin-top: 50px;
+}
+
+.texto-footer {
+    color: #999999;
+}
+
+.texto-footer span {
+    color: #ff6b35;
+}
+
+.contenedor-formulario {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.formulario-contacto {
+    background-color: #2a2a2a;
+    padding: 40px;
+    border: 2px solid #333333;
+}
+
+.grupo-formulario {
+    margin-bottom: 25px;
+}
+
+.grupo-formulario label {
+    display: block;
+    color: #f7b731;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a1a1a;
+    border: 2px solid #333333;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+.boton-enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.boton-enviar:hover {
+    background-color: #ff8555;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item-info {
+    background-color: #2a2a2a;
+    padding: 25px;
+    border-left: 4px solid #ff6b35;
+    text-align: center;
+}
+
+.icono-info {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.item-info h3 {
+    color: #f7b731;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.item-info p {
+    color: #cccccc;
+    font-size: 15px;
+}
+mapa-contacto {
+    margin-bottom: 10px;
+    border: 1px solid #ff6b35;
+    line-height: 0;
+}
+
+.ubicacion-texto {
+    color: #cccccc;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .titulo-hero {
+        font-size: 50px;
+    }
+    
+    .grilla-guitarras {
+        grid-template-columns: 1fr;
+    }
+    
+    .grilla-datos {
+        grid-template-columns: 1fr;
+    }
+}
