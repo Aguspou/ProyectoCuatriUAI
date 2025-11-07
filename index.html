@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,51 +45,52 @@
             <div class="grilla-guitarras">
                 
                 <div class="tarjeta-guitarra">
-                    <div class="img-guitarra">🎻</div>
-                    <div class="contenido-guitarra">
-                        <h3 class="tipo-guitarra">Guitarra Clásica</h3>
-                        <p class="descripcion-guitarra">
-                            También conocida como guitarra criolla o española, utiliza cuerdas de nylon que producen un sonido cálido y suave. Es la eleccion perfecta para música clásica, flamenco y bossa nova.
-                        </p>
-                        <div class="especificaciones-guitarra">
-                            <span class="etiqueta-spec">Cuerdas de Nylon</span>
-                            <span class="etiqueta-spec">Mástil Ancho</span>
-                            <span class="etiqueta-spec">Sonido Cálido</span>
-                        </div>
-                    </div>
-                </div>
+                  <div class="img-guitarra"> <img src="Criolla.png" alt="Guitarra Clásica" class="img-real-guitarra"> </div>
+                     <div class="contenido-guitarra"> 
+                    <h3 class="tipo-guitarra">Guitarra Clásica</h3> 
+                    <p class="descripcion-guitarra"> También conocida como guitarra criolla o española, utiliza cuerdas de nylon que producen un sonido cálido y suave. Es la eleccion perfecta para música clásica, flamenco y bossa nova.
+                    </p>
+                     <div class="especificaciones-guitarra">
+                         <span class="etiqueta-spec">Cuerdas de Nylon</span>
+                         <span class="etiqueta-spec">Mástil Ancho</span>
+                         <span class="etiqueta-spec">Sonido Cálido</span>
+                     </div> 
+                </div> <button class="boton-calcular" data-tipo="clasica">Ver Tensión Estimada</button>
+              </div>
 
                 
-                <div class="tarjeta-guitarra">
-                    <div class="img-guitarra">🎸</div>
-                    <div class="contenido-guitarra">
-                        <h3 class="tipo-guitarra">Guitarra Acústica</h3>
-                        <p class="descripcion-guitarra">
-                            Con cuerdas de acero, ofrece un sonido brillante y proyeccion potente. Su caja de resonancia amplifica naturalmente las vibraciones. Perfecta para folk, country, pop y rock acustico.
-                        </p>
-                        <div class="especificaciones-guitarra">
-                            <span class="etiqueta-spec">Cuerdas de Acero</span>
-                            <span class="etiqueta-spec">Alto Volumen</span>
-                            <span class="etiqueta-spec">Versatilidad</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="tarjeta-guitarra"> 
+                    <div class="img-guitarra"> <img src="Electrica.png" alt="Guitarra electrica" class="img-real-guitarra"> </div>
+                    <div class="contenido-guitarra"> 
+                    <h3 class="tipo-guitarra">Guitarra electrica</h3> 
+                    <p class="descripcion-guitarra">
+                        Utiliza pastillas magnéticas para convertir las vibraciones en señales electricas. Su cuerpo solido reduce la retroalimentacion. Infinitas posibilidades sonoras con pedales y amplificadores.
+                    </p>
+                     <div class="especificaciones-guitarra"> 
+                        <span class="etiqueta-spec">Pastillas</span>
+                         <span class="etiqueta-spec">Amplificada</span>
+                          <span class="etiqueta-spec">Efectos</span>
+                    </div> 
+                </div> 
+                <button class="boton-calcular" data-tipo="clasica">Ver Tensión Estimada</button>
+             </div>
 
                 
-                <div class="tarjeta-guitarra">
-                    <div class="img-guitarra">⚡</div>
-                    <div class="contenido-guitarra">
-                        <h3 class="tipo-guitarra">Guitarra Eléctrica</h3>
-                        <p class="descripcion-guitarra">
-                            Utiliza pastillas magnéticas para convertir las vibraciones en señales electricas. Su cuerpo solido reduce la retroalimentacion. Infinitas posibilidades sonoras con pedales y amplificadores.
-                        </p>
-                        <div class="especificaciones-guitarra">
-                            <span class="etiqueta-spec">Pastillas</span>
-                            <span class="etiqueta-spec">Amplificada</span>
-                            <span class="etiqueta-spec">Efectos</span>
-                        </div>
-                    </div>
-                </div>
+                <div class="tarjeta-guitarra"> 
+                    <div class="img-guitarra"> <img src="Acustica.png" alt="Guitarra acustica" class="img-real-guitarra"> </div>
+                    <div class="contenido-guitarra"> 
+                    <h3 class="tipo-guitarra">Guitarra acustica</h3> 
+                    <p class="descripcion-guitarra">
+                         Con cuerdas de acero, ofrece un sonido brillante y proyeccion potente. Su caja de resonancia amplifica naturalmente las vibraciones. Perfecta para folk, country, pop y rock acustico.
+                    </p>
+                     <div class="especificaciones-guitarra"> 
+                        <span class="etiqueta-spec">Cuerdas de Nylon</span>
+                         <span class="etiqueta-spec">Mástil Ancho</span>
+                          <span class="etiqueta-spec">Sonido Cálido</span>
+                    </div> 
+                </div> 
+                <button class="boton-calcular" data-tipo="clasica">Ver Tensión Estimada</button>
+             </div>
             </div>
 
             
@@ -383,9 +385,11 @@
                     </div>
 
                     <div class="item-info">
-                        <div class="icono-info">📍</div>
-                        <h3>Ubicación</h3>
-                        <p>Buenos Aires, Argentina</p>
+                         <div class="mapa-contacto">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168869188005!2d-58.38155999999999!3d-34.603722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac417b73859%3A0x7d01878b27e4e0b5!2sObelisco!5e0!3m2!1ses-419!2sar!4v1633544321000!5m2!1ses-419!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+                         </div> 
+                         <p class="ubicacion-texto">Estamos en el centro de Buenos Aires (Referencia Obelisco)
+                         </p> 
                     </div>
 
                     <div class="item-info">
